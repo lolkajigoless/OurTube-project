@@ -2,8 +2,6 @@
 
 Projeto feito para Atividade bimestral
 
---
-
 # Como rodar
 
 ### 1 - Coloque os arquivos em uma pasta.
