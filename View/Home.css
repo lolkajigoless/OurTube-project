@@ -1,0 +1,261 @@
+/* Define estilo básico do body: sem margem e com fonte Arial */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header fixo no topo da página */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #202020; /* cor de fundo escura */
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens do header à direita */
+  align-items: center;       /* Centraliza verticalmente os itens */
+  padding: 0 20px;           /* Espaçamento horizontal */
+  z-index: 1000;             /* Garante que fique sobre outros elementos */
+}
+
+/* Estilo dos botões dentro do container no header */
+.container a.btn {
+  color: white;
+  text-decoration: none;    /* Remove sublinhado */
+  margin-left: 15px;        /* Espaço entre botões */
+  padding: 8px 15px;        /* Espaçamento interno */
+  border: 1px solid white;  /* Borda branca */
+  border-radius: 3px;       /* Bordas arredondadas */
+  font-weight: bold;
+  transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+/* Efeito hover para botões do header */
+.container a.btn:hover {
+  background-color: white;  /* Fundo branco ao passar mouse */
+  color: #202020;           /* Texto escuro */
+}
+
+/* Menu lateral fixo, abaixo do header */
+.sidebar {
+  width: 250px;             /* Largura do menu lateral */
+  position: fixed;
+  top: 50px;                /* Começa logo abaixo do header */
+  left: 0;
+  bottom: 0;                /* Vai até o final da tela */
+  background-color: #202020; /* Cor de fundo escura */
+  color: white;
+  padding: 20px;
+  overflow-y: auto;         /* Scroll vertical caso o conteúdo extrapole */
+}
+
+/* Itens do menu lateral */
+.sidebar a {
+  display: block;           /* Ocupa linha inteira */
+  color: white;
+  text-decoration: none;    /* Remove sublinhado */
+  padding: 10px 0;
+  border-bottom: 1px solid #444; /* Linha divisória */
+}
+
+/* Efeito hover para itens do menu */
+.sidebar a:hover {
+  background-color: #383838; /* Fundo mais claro ao passar mouse */
+}
+
+/* Área principal de conteúdo */
+.content {
+  margin-top: 50px;          /* Espaço abaixo do header */
+  margin-left: 300px;        /* Espaço para o menu lateral */
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 700px;          /* Limita largura máxima para melhor leitura */
+  margin-right: auto;        /* Margem direita automática para centralizar */
+}
+
+/* Texto de boas-vindas */
+.welcome {
+  color: white;
+  text-align: center;        /* Centraliza texto */
+  width: 100%;               /* Ocupa toda largura do container */
+}
+
+/* Estilo para foto de perfil */
+.foto-perfil {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;       /* Torna a imagem circular */
+  object-fit: cover;        /* Corta a imagem para caber no tamanho */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Estilo básico para formulários */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+/* Estilo para campos de formulário e botões */
+form input,
+form select,
+form textarea,
+form button {
+  display: block;
+  width: 100%;              /* Campos ocupam toda largura do form */
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;   /* Inclui padding na largura total */
+  font-size: 16px;
+}
+
+/* Botões do formulário */
+form button {
+  background-color: #007BFF; /* Azul padrão */
+  color: white;
+  border: none;
+  cursor: pointer;          /* Cursor de clique */
+}
+
+/* Hover nos botões do form */
+form button:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Estilo básico para linhas horizontais (<hr>) */
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Área principal (main) */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+/* Estilo para vídeos na área principal */
+main video {
+  width: 400px;
+  max-width: 100%;          /* Responsivo */
+  height: auto;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para descrição do vídeo */
+main .descricao {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Container dos botões de reação (like/dislike) */
+main .reacoes {
+  display: flex;
+  gap: 10px;               /* Espaço entre botões */
+}
+
+/* Estilo para botões de like e dislike */
+main .reacoes button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover nos botões de reação */
+main .reacoes button:hover {
+  background-color: #ddd;
+}
+
+/* Cursor pointer e transições para botões e links de botão */
+form button,
+main .reacoes button,
+.container a.btn {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover com leve zoom para feedback visual */
+form button:hover,
+main .reacoes button:hover,
+.container a.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Cursor texto para campos editáveis */
+form input,
+form select,
+form textarea {
+  cursor: text;
+}
+
+/* Cursor e opacidade para campos desabilitados */
+form input:disabled,
+form select:disabled,
+form textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Cursor pointer para input tipo file */
+input[type="file"] {
+  cursor: pointer;
+}
+
+/* Cursor pointer para botões e inputs específicos */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="file"] {
+  cursor: pointer;
+}
+
+/* Estilo do container do logo na sidebar */
+.sidebar-logo {
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+/* Imagem do logo da sidebar */
+.sidebar-logo img {
+  max-width: 100%;
+  height:130px;           /* Altura fixa para o logo */
+  object-fit:contain;
+}
+
+/* Link da logo na sidebar sem borda inferior e padding extra */
+.sidebar a.logo-link {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Estilo para link da foto de perfil (remove sublinhado e outline) */
+a.foto-perfil-link {
+  outline: none;
+  text-decoration: none;
+}
+
+/* Remove outline ao focar no link da foto de perfil */
+a.foto-perfil-link:focus {
+  outline: none;
+}
