@@ -9,4 +9,4 @@ Projeto feito para Atividade bimestral
 ### 3 - Coloque o codigo SQL em um SGBD(usei MySql) e use a database.
 ### 4 - acesse o localhost e comece a usar o site.
 
-###! [A logo foi pega neste post do reddit](https://www.reddit.com/r/sbubby/comments/azk7ec/ourtube/) !
+### ! [A logo foi pega neste post do reddit](https://www.reddit.com/r/sbubby/comments/azk7ec/ourtube/) !
