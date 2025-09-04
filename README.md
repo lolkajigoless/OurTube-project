@@ -8,3 +8,5 @@ Projeto feito para Atividade bimestral
 ### 2 - ligue o xampp, as opcoes apache e Mysql.
 ### 3 - Coloque o codigo SQL em um SGBD(usei MySql) e use a database.
 ### 4 - acesse o localhost e comece a usar o site.
+
+###! [A logo foi pega neste post do reddit](https://www.reddit.com/r/sbubby/comments/azk7ec/ourtube/) !
